@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <title>Óptica - Login</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../../_css/form-style.css">
+    <link rel="stylesheet" type="text/css" href="../../_css/geral.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header class="container-cabecalho">
+        <button class="icon-menu"></button>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="../../index.html"><span class="icon-home"></span>Home</a>
+                </li>
+                <li class="box-submenu seta-baixo">
+                    <span><span class="icon-carry"></span>Compras</span>
+                    <ul class="submenu">
+                        <li>
+                            <a href="../../_paginas/oculos.html"><span class="icon-glass"></span>Óculos</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="icon-medician"></span>Fármacos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="box-submenu seta-baixo">
+                    <span><span class="icon-marca"></span>Marcas</span>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Gucci</a>
+                        </li>
+                        <li>
+                            <a href="#">Prada</a>
+                        </li>
+                        <li>
+                            <a href="#">Dior</a>
+                        </li>
+                        <li>
+                            <a href="#">Lacoste</a>
+                        </li>
+                        <li>
+                            <a href="#">Versace</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../consulta.html"><span class="icon-bubble"></span>Consultas</a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon-help"></span>Ajuda</a>
+                </li>
+                <li>
+                    <a href="login-form.html"><span class="bold"><span class="icon-help"></span>Minha Conta</span><span>Logar/Cadastrar</span></a>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="logo">
+            <a href="../../index.html">
+                <img src="../../_img/logo.png" alt="logo óptica"/>
+            </a>
+        </h1>
+        <div class="pesquisa">
+            <div class="box-pesquisa-conta">
+                <form>
+                    <input type="search" name="pesquisa" class="ver" placeholder="Pesquisar...">
+                    <button type="button" class="btn-pesquisa"><span class="icon-search"></span></button>
+                    <button type="submit" class="btn-pesquisa-mobile ver"><span  class="icon-search-first"></span></button>                 
+                </form>
+                <a href="login-form.html" class="btn-conta ativo"><span  class="icon-user"></span></a>
+            </div>
+        </div>
+    </header>
+    <main class="largura-media">
+        <form method="post" action="...control/login_service">
+            <fieldset class="borda-redonda">
+                <legend>Fazer Login</legend>
+                <div class="box-flexiva">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Digite o seu email" required>
+                </div>                
+                
+                <div class="box-flexiva">
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" placeholder="Digite a sua senha" required>
+                </div>
+                <input type="submit" name="ir" value="Logar" class="btn btn-registo box-media">
+                <a href="cadastro-form.html">Ainda não possui uma conta?</a>
+                <a href="#">Esqueceu a senha?</a>
+            </fieldset>
+        </form>
+    </main>
+    <footer class="container-rodape">
+
+        <div class="newslleter largura-media">
+            <div class="box-texto">
+                <p>Sobrescreva-se já e mantenha-se atento em todas as actualizações e dicas de saúde para tua visão</p>
+            </div>
+            <form action="#" method="post">
+                <input type="email" name="email" class="margem" placeholder="Escreva o seu email..." required>
+                <button type="submit" class="btn-registo margem">Sobrescrever</button>
+            </form>
+        </div>
+        <div class="rede-social">
+            <ul>
+                <li>
+                    <a href="#"><span class="icon-face"></span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon-whatsapp"></span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="direitos">
+            <p>Óptica Boa Visão - <span class="copia">&copy</span>Direitos Reservados 2020</p>
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="../../_javaScript/abrir.js"></script>
+</body>
+</html>

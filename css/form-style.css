@@ -1,0 +1,57 @@
+fieldset{
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 5rem;
+}
+fieldset input{
+    width: 80%;
+    border: none;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+fieldset a{
+    display: block;
+    margin-top: 20px;
+}
+fieldset a:hover{text-decoration: underline;}
+.box-flexiva{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.box-flexiva input{height: 20px;}
+legend{
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+label{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 150px;
+}
+input[type=submit]{
+    margin-left: 25%;
+    color: #fff;
+    cursor: pointer;
+    filter: brightness(50%);
+    transition: 0.5s;
+}
+input[type=submit]:hover{filter: brightness(100%);}
+.tema-destaque{
+    margin-bottom: 20px !important;
+    text-align: center !important;
+}
+
+/*responsivo*/
+@media screen and (max-width: 800px){
+    .box-flexiva{
+        flex-direction: column;
+    }
+    .box-flexiva input{
+        width: 100%;
+    }
+    label{display: block;margin-bottom: 10px;}
+}
