@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <title>Óptica - Consulta</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/form-style.css">
+    <link rel="stylesheet" type="text/css" href="../css/geral.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .relative{
+            margin-left: 20%;
+            margin-bottom: 20px;
+            width: 79.5%;
+            height: 200px;
+            border: 1px solid #ccc;
+        }
+        .direita{
+            justify-content: flex-end;
+            flex-grow: 1;
+        }        
+        /*responsivo*/
+        @media screen and (max-width: 800px){
+             .relative{
+                    margin-left: 0;
+                    width: 100%;
+                    height: 100px;
+                }
+        }
+    </style>
+</head>
+<body>
+    <header class="container-cabecalho">
+        <button class="icon-menu"></button>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="../index.html"><span class="icon-home"></span>Home</a>
+                </li>
+                <li class="box-submenu seta-baixo">
+                    <span><span class="icon-carry"></span>Compras</span>
+                    <ul class="submenu">
+                        <li>
+                            <a href="oculos.html"><span class="icon-glass"></span>Óculos</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="icon-medician"></span>Fármacos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="box-submenu seta-baixo">
+                    <span><span class="icon-marca"></span>Marcas</span>
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Gucci</a>
+                        </li>
+                        <li>
+                            <a href="#">Prada</a>
+                        </li>
+                        <li>
+                            <a href="#">Dior</a>
+                        </li>
+                        <li>
+                            <a href="#">Lacoste</a>
+                        </li>
+                        <li>
+                            <a href="#">Versace</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="consulta.html" class="ativo"><span class="icon-bubble"></span>Consultas</a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon-help"></span>Ajuda</a>
+                </li>
+                <li>
+                    <a href="Login-form/login-form.html"><span class="bold"><span class="icon-help"></span>Minha Conta</span><span>Logar/Cadastrar</span></a>
+                </li>
+            </ul>
+        </nav>
+        <h1 class="logo">
+            <a href="../index.html">
+                <img src="../img/logo.png" alt="logo óptica"/>
+            </a>
+        </h1>
+        <div class="pesquisa">
+            <div class="box-pesquisa-conta">
+                <form>
+                    <input type="search" name="pesquisa" class="ver" placeholder="Pesquisar...">
+                    <button type="button" class="btn-pesquisa"><span class="icon-search"></span></button>
+                    <button type="submit" class="btn-pesquisa-mobile ver"><span  class="icon-search-first"></span></button>                 
+                </form>
+                <a href="Login-form/login-form.html" class="btn-conta"><span  class="icon-user"></span></a>
+            </div>
+        </div>
+    </header>
+    <main class="largura-media">        
+        <div class="tema-destaque">
+            <h2 class="margem-esquerda">Marque já a sua consulta!</h2>
+            <h2 class="margem-esquerda">Cuide da sua saúde ocular!</h2>
+            <p class="margem-esquerda">Estamos abertos de <strong>Segunda</strong> à <strong>Sexta-feira</strong> das <strong>08:00 às 17:00 horas</strong></p>
+        </div>
+        <form method="post">
+            <fieldset class="borda-redonda">  
+                <div class="box-flexiva">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" placeholder="Escreva o seu nome" required>
+                </div>        
+                <div class="box-flexiva">
+                    <label for="numero">Número:</label>
+                    <input type="text" name="numero" placeholder="Digite o seu número" required>
+                </div>
+                <div class="box-flexiva">
+                    <label for="localidade">Localidade:</label>
+                    <input type="text" name="localidade" placeholder="Onde resides?" required>
+                </div>
+                <div class="box-flexiva">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" name="assunto" placeholder="Descreva a sua condção física" required>
+                </div>   
+                <div class="box-flexiva">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" placeholder="Digite o seu e-mail">
+                </div>                
+                <div class="box-flexiva direita">                    
+                    <select class="custom-select" id="consulta" required>
+                       <option disabled selected>Seleccione a consulta a fazer</option>
+                       <option value="Optometria">Consulta de Optometria</option>
+                       <option value="Oftalmologia">Consulta de Oftalmologia</option>
+                       <option value="Contactologia">Consulta de Contactologia</option>
+                        
+                    </select>
+                </div>
+                <div class="box-flexiva direita">                    
+                    <select class="custom-select" id="opcaoExame" required>
+                       <option disabled selected>Seleccione o exame a fazer</option>
+                       <option value="Diagnostico">Exame de Campimetria</option>
+                       <option value="Diagnostico">Exame de Ginoscopia</option>
+                       <option value="Diagnostico">Mediçao da Tensao Ocular</option>
+                       <option value="Diagnostico">OCT(Tomografia Corencia Optica)</option>
+                       <option value="Diagnostico">Paquimetria</option>
+                       <option value="Diagnostico">Retinografia</option>
+                       <option value="Diagnostico">Topografia Corneal</option>                        
+                       <option value="Diagnostico">Remoçao de Corpo Estranho Superficial</option>
+                        <option value="Diagnostico">Ginoscopia</option>
+                        <option value="Diagnostico">Tonometria</option>
+                        <option value="Diagnostico">Estereofoto de Papila</option>
+                    </select>
+                </div>
+                <input type="submit" name="enviar" value="Marcar consulta" class="btn btn-registo box-media">
+            </fieldset>
+        </form>
+    </main>
+
+    <footer class="container-rodape">
+
+        <div class="newslleter largura-media">
+            <div class="box-texto">
+                <p>Sobrescreva-se já e mantenha-se atento em todas as actualizações e dicas de saúde para tua visão</p>
+            </div>
+            <form action="#" method="post">
+                <input type="email" name="email" class="margem" placeholder="Escreva o seu email..." required>
+                <button type="submit" class="btn-registo margem">Enviar</button>
+            </form>
+        </div>
+        <div class="rede-social">
+            <ul>
+                <li>
+                    <a href="#"><span class="icon-face"></span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon-whatsapp"></span></a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon-twitter"></span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="direitos">
+            <p>Óptica Boa Visão - <span class="copia">&copy</span>Direitos Reservados 2020</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="..//abrir.js"></script>
+</body>
+</html>

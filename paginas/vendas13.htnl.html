@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <title>Óptica - Venda</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/form-style.css">
+    <link rel="stylesheet" type="text/css" href="../css/geral.css">
+    <link rel="stylesheet" type="text/css" href="../css/item-oculos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .tema-destaque h2{font-size: 3rem;}
+        main form{
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 10px;
+        }
+        .flexiva{
+            margin-bottom: 30px;
+        }
+        .flex{
+            justify-content: space-between;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        .box-img{
+            width: 40%;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        .box-img img{width: 100%;}
+        .box-descricao{
+            width: 60%;
+            background-color: transparent;
+            color: #000;
+        }
+        .box-texto p:last-child{
+            line-height: 2rem;
+        }
+        fieldset{
+            box-shadow: none;
+            margin-bottom: 2rem;
+        }
+        .direita{
+            justify-content: flex-end;
+            flex-grow: 1;
+        }
+
+        @media screen and (max-width: 904px){
+            .flex{flex-direction: column;}
+            .box-img{width: 50%;}
+            .box-descricao{padding-left: 0; width: 100%;}
+            .tema-destaque h2,.tema-destaque p{padding-right: 10px;padding-left: 10px;}
+        }
+        @media screen and (max-width: 400px){
+            .flex{align-items: center;}
+            .box-img{width: 90%;}
+            .box-descricao{padding-left: 20px;}
+        }
+        @media screen and (max-width: 290px){select{width: 100%;}}
+    </style>
+</head>
+<body>
+<header class="container-cabecalho">
+    <button class="icon-menu"></button>
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="../index.html"><span class="icon-home"></span>Home</a>
+            </li>
+            <li class="box-submenu seta-baixo">
+                <span><span class="icon-carry"></span>Compras</span>
+                <ul class="submenu">
+                    <li>
+                        <a href="oculos.html"><span class="icon-glass"></span>Óculos</a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="icon-medician"></span>Fármacos</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="box-submenu seta-baixo">
+                <span><span class="icon-marca"></span>Marcas</span>
+                <ul class="submenu">
+                    <li>
+                        <a href="#">Gucci</a>
+                    </li>
+                    <li>
+                        <a href="#">Prada</a>
+                    </li>
+                    <li>
+                        <a href="#">Dior</a>
+                    </li>
+                    <li>
+                        <a href="#">Lacoste</a>
+                    </li>
+                    <li>
+                        <a href="#">Versace</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="consulta.html" class="ativo"><span class="icon-bubble"></span>Consultas</a>
+            </li>
+            <li>
+                <a href="#"><span class="icon-help"></span>Ajuda</a>
+            </li>
+            <li>
+                <a href="Login-form/login-form.html"><span class="bold"><span class="icon-help"></span>Minha Conta</span><span>Logar/Cadastrar</span></a>
+            </li>
+        </ul>
+    </nav>
+    <h1 class="logo">
+        <a href="../index.html">
+            <img src="../img/logo.png" alt="logo óptica"/>
+        </a>
+    </h1>
+    <div class="pesquisa">
+        <div class="box-pesquisa-conta">
+            <form>
+                <input type="search" name="pesquisa" class="ver" placeholder="Pesquisar...">
+                <button type="button" class="btn-pesquisa"><span class="icon-search"></span></button>
+                <button type="submit" class="btn-pesquisa-mobile ver"><span class="icon-search-first"></span></button>
+            </form>
+            <a href="Login-form/login-form.html" class="btn-conta"><span  class="icon-user"></span></a>
+        </div>
+    </div>
+</header>
+<main class="largura-media">
+    <div class="tema-destaque">
+        <h2>Óptima Escolha</h2>
+        <p>Obrigado por comprar na Óptica Palanca! Preencha seus dados para efectuar a compra.</p>
+    </div>
+    <form method="post" class="borda-redonda">
+        <div class="flexiva">
+            <div class="flex borda-redonda">
+                <div class="box-img borda-redonda"><img src="oculos13.jpg" alt="óculos da gucci"/></div>
+                <div class="box-descricao">
+                    <div class="box-texto">
+                        <p><strong>Model: </strong>Adulto</p>
+                        <p><strong>Marca: </strong>Gucci</p>
+                        <p><strong>Cor: </strong>Preto</p>
+                        <p><strong>Preço: </strong>18.000kz</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <fieldset class="borda-redonda">
+            <legend>Dados Pessoal</legend>
+            <div class="box-flexiva">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" placeholder="Escreva seu nome completo" required>
+            </div>
+            <div class="box-flexiva">
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="Digite o seu email" required>
+            </div>
+        </fieldset>
+        <fieldset class="borda-redonda">
+            <legend>Dados do Multicaixa</legend>
+            <div class="box-flexiva">
+                <label for="numero">Número do cartão:</label>
+                <input type="text" name="numero" placeholder="Digite o número do seu multicaixa" required>
+            </div>
+            <div class="box-flexiva direita">
+                <select class="custom-select" id="bandeira-cartao" required>
+                    <option disabled selected>Selecciona uma opção de pagamento</option>
+                    <option value="bfa">BFA</option>
+                    <option value="bai">BAI</option>
+                    <option value="bpc">BPC</option>
+                    <option value="atlantico">Atlântico</option>
+                </select>
+            </div>
+            <input type="submit" name="Sobrescrever" value="Comprar produto" class="btn btn-registo box-media">
+        </fieldset>
+    </form>
+</main>
+<footer class="container-rodape">
+
+    <div class="newslleter largura-media">
+        <div class="box-texto">
+            <p>Sobrescreva-se já e mantenha-se atento em todas as actualizações e dicas de saúde para tua visão</p>
+        </div>
+        <form action="#" method="post">
+            <input type="email" name="email" class="margem" placeholder="Escreva o seu email..." required>
+            <button type="submit" class="btn-registo margem">Sobrescrever</button>
+        </form>
+    </div>
+    <div class="rede-social">
+        <ul>
+            <li>
+                <a href="#"><span class="icon-face"></span></a>
+            </li>
+            <li>
+                <a href="#"><span class="icon-whatsapp"></span></a>
+            </li>
+            <li>
+                <a href="#"><span class="icon-twitter"></span></a>
+            </li>
+        </ul>
+    </div>
+    <div class="direitos">
+        <p>Óptica Boa Visão - <span class="copia">&copy</span>Direitos Reservados 2020</p>
+    </div>
+</footer>
+<script type="text/javascript" src="../javaScript/abrir.js"></script>
+</body>
